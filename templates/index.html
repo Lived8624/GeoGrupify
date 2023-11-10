@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animated Start Button</title>
+    <style>
+        /* CSS for the Start Button */
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
+        }
+
+        .start-button {
+            padding: 16px 32px;
+            font-size: 24px;
+            background-color: #4287f5;
+            color: #fff;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: transform 0.3s ease-in-out;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .start-button:hover {
+            transform: scale(1.1);
+        }
+
+        /* CSS for the Animation Patterns */
+        .start-button::before {
+            content: '';
+            position: absolute;
+            top: -10px;
+            left: -10px;
+            width: 20px;
+            height: 20px;
+            background-color: #f5a623;
+            border-radius: 50%;
+            animation: pattern1 2s infinite;
+        }
+
+        .start-button::after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            right: -10px;
+            width: 20px;
+            height: 20px;
+            background-color: #f5a623;
+            border-radius: 50%;
+            animation: pattern2 2s infinite;
+        }
+
+        @keyframes pattern1 {
+            0%, 100% {
+                transform: translate(0, 0);
+            }
+            50% {
+                transform: translate(30px, 30px);
+            }
+        }
+
+        @keyframes pattern2 {
+            0%, 100% {
+                transform: translate(0, 0);
+            }
+            50% {
+                transform: translate(-30px, -30px);
+            }
+        }
+    </style>
+</head>
+<body><a href="homepage">
+    <button class="start-button"  >Start</button></a>
+
+
+</body>
+</html>

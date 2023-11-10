@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Error Page - Custom Animations and Colors</title>
+    <style>
+        /* CSS for the error page */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #F5F5F5;
+            text-align: center;
+            padding: 30px;
+            animation: backgroundAnimation 8s ease-in-out infinite alternate;
+        }
+
+        h1 {
+            font-size: 48px;
+            margin-bottom: 10px;
+            color: #FF0000;
+        }
+
+        p {
+            font-size: 24px;
+            margin-bottom: 30px;
+            color: #333333;
+        }
+
+        .error-image {
+            width: 300px;
+            height: auto;
+            margin: 0 auto;
+            display: block;
+            animation: rotateAnimation 3s linear infinite;
+        }
+
+        /* Custom animations */
+        @keyframes backgroundAnimation {
+            0% { background-color: #F5F5F5; }
+            50% { background-color: #EAEAEA; }
+            100% { background-color: #F5F5F5; }
+        }
+
+        @keyframes rotateAnimation {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+
+        /* Additional CSS specific to the error page can be added here */
+
+    </style>
+</head>
+
+<body>
+    <h1>Error Page</h1>
+    <p>Oops! Something went wrong.</p>
+    <img src="error_image.png" alt="Error Image" class="error-image">
+    <!-- Replace "error_image.png" with the path to your custom error image -->
+
+    <script>
+        // JavaScript code can be added here, if needed.
+        // For example, you can add custom error handling or analytics scripts.
+    </script>
+</body>
+
+</html>
